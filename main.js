@@ -67,8 +67,8 @@ function montarTabelaMensal(taxaJuros, periodo, valorInvestido) {
         let cellMontante = linha.insertCell();
 
         cellPeriodo.innerHTML = i;
-        cellJuros.innerHTML = 'R$ ' + jurosAtual;
-        cellMontante.innerHTML = 'R$ ' + valorInvestido;
+        cellJuros.innerHTML = 'R$ ' + parseFloat(jurosAtual.toFixed(2)).toLocaleString('PT');
+        cellMontante.innerHTML = 'R$ ' + parseFloat(valorInvestido.toFixed(2)).toLocaleString('PT');
     }
 }
 
